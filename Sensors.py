@@ -8,7 +8,7 @@ import random
 from mysql.connector import Error
 
 database = 'Test_Adhara'
-url = 'http://192.168.54.49/'
+url = os.getenv('SENSORS_API')
 
 def writeDataBase(data):
     
